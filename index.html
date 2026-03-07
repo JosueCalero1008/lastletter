@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para mi preciosa Eli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <div class="petals" aria-hidden="true">
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+  </div>
+
+  <section class="intro-screen" id="introScreen">
+    <div class="intro-card">
+      <img src="images/snoopy.png" alt="Snoopy" class="intro-snoopy">
+
+      <p class="intro-mini">Un detalle hecho con mucho cariño</p>
+      <h1>Para mi preciosa Eli</h1>
+      <p class="intro-text">
+        Hoy quise escribirte algo especial, no solo para recordarte lo mucho que significas para mí,
+        sino también para celebrar la mujer tan increíble, valiosa y hermosa que eres.
+      </p>
+
+      <div class="envelope-stage">
+        <div class="letter-preview">
+          <div class="preview-line long"></div>
+          <div class="preview-line medium"></div>
+          <div class="preview-line short"></div>
+        </div>
+
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">E</div>
+        </div>
+      </div>
+
+      <button id="openLetterBtn">Abrir carta</button>
+    </div>
+  </section>
+
+  <main class="main-content hidden" id="mainContent">
+    <section class="paper-wrapper">
+      <article class="paper" id="paper">
+        <img src="images/rosa-morada.png" alt="Rosa morada" class="flower flower-top-left">
+        <img src="images/rosa-morada.png" alt="Rosa morada" class="flower flower-bottom-right">
+        <img src="images/snoopy.png" alt="Snoopy" class="snoopy-corner">
+
+        <div class="sparkle sparkle-1"></div>
+        <div class="sparkle sparkle-2"></div>
+        <div class="sparkle sparkle-3"></div>
+        <div class="sparkle sparkle-4"></div>
+
+        <div class="paper-top reveal-on-scroll">
+          <p class="fecha">8 de marzo</p>
+          <h2>Una carta para ti, mi Eli</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="paper-body">
+          <p class="saludo reveal-on-scroll typewriter-block">Mi preciosa Eli,</p>
+
+          <figure class="floating-photo right animated-photo reveal-on-scroll">
+            <img src="images/image1.jpeg" alt="Eli 1">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Hoy quise escribirte esta carta porque no quería que este día pasara como una fecha cualquiera.
+            El Día de la Mujer no es solo una celebración bonita, también es una ocasión para reconocer,
+            admirar y valorar la fuerza, la ternura, la esencia y la grandeza de mujeres maravillosas como tú.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Y si hoy pensé en escribirte algo así, es porque para mí no eres cualquier persona.
+            Eres alguien muy especial en mi vida, alguien que me importa de verdad, alguien que con su forma
+            de ser logra hacer más bonitos mis pensamientos, mis emociones y hasta mis días.
+          </p>
+
+          <figure class="floating-photo left animated-photo reveal-on-scroll">
+            <img src="images/image2.jpeg" alt="Eli 2">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Me gustas por muchas razones, pero más allá de eso, te admiro profundamente por la mujer que eres.
+            Por tu forma de sonreír, por tu dulzura, por tu manera de transmitir paz, por esa luz tan tuya
+            que se siente incluso en los detalles más pequeños. Tienes una presencia hermosa, de esas que no
+            solo se notan, sino que también se sienten.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Hoy quiero recordarte que eres valiosa, importante y digna de todo lo bueno que existe.
+            Quiero que nunca olvides que tu esencia tiene fuerza, que tu ternura tiene valor
+            y que tu forma de ser deja huellas lindas en quienes tienen la fortuna de coincidir contigo.
+          </p>
+
+          <figure class="floating-photo center animated-photo reveal-on-scroll">
+            <img src="images/image3.jpeg" alt="Eli 3">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            En este Día de la Mujer quiero decirte que no solo celebro lo hermosa que eres por fuera,
+            sino también todo lo que eres por dentro: tu sensibilidad, tu belleza, tu fuerza, tu corazón
+            y esa manera tan especial en la que haces que todo se sienta más bonito.
+          </p>
+
+          <figure class="floating-photo right small animated-photo reveal-on-scroll">
+            <img src="images/image4.jpeg" alt="Eli 4">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Si hoy te escribo esto, es porque me nace. Porque cuando alguien de verdad te importa,
+            no basta con pensarlo: también quieres demostrarlo. Y yo quería que en este día especial
+            pudieras sentirte admirada, querida y recordada como la mujer maravillosa que eres.
+          </p>
+
+          <figure class="floating-photo left small animated-photo reveal-on-scroll">
+            <img src="images/image5.jpeg" alt="Eli 5">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Gracias por existir, Eli. Gracias por ser tan especial, tan linda y tan única.
+            Y gracias también por inspirarme a querer hacerte sonreír. Ojalá esta carta te recuerde,
+            aunque sea un poquito, lo mucho que vales y lo bonito que es tenerte en mi corazón.
+          </p>
+
+          <p class="closing reveal-on-scroll typewriter-block">
+            Esta carta es sencilla, pero está hecha con cariño real. Y si al leerla logras sentirte
+            especial, entonces todo esto ya valió la pena.
+          </p>
+
+          <div class="secret-box reveal-on-scroll">
+            <p class="secret-title">Algo que quería decirte</p>
+            <p class="secret-line">
+              Si volviera a elegir una sonrisa para alegrar mis días,
+              volvería a elegir la tuya.
+            </p>
+          </div>
+
+          <p class="final-line reveal-on-scroll">
+            Gracias por existir en mi vida.
+          </p>
+
+          <p class="firma glow-sign reveal-on-scroll">
+            Te amo mucho Eli
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
