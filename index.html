@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Anto...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="petals" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <section class="intro-screen" id="introScreen">
+    <div class="intro-card">
+      <p class="intro-mini">Algo que necesitaba decirte</p>
+      <h1>Mi Anto...</h1>
+      <p class="intro-text">
+        Hay despedidas que uno nunca quiso escribir,
+        pero a veces el corazón necesita hablar por última vez.
+      </p>
+
+      <div class="envelope-stage">
+        <div class="letter-preview">
+          <div class="preview-line long"></div>
+          <div class="preview-line medium"></div>
+          <div class="preview-line short"></div>
+        </div>
+
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">A</div>
+        </div>
+      </div>
+
+      <button id="openLetterBtn">Abrir carta</button>
+    </div>
+  </section>
+
+  <main class="main-content hidden" id="mainContent">
+    <section class="paper-wrapper">
+      <article class="paper">
+        <img src="images/flor-celeste.png" alt="Flor celeste" class="flower flower-top-left">
+        <img src="images/flor-celeste.png" alt="Flor celeste" class="flower flower-bottom-right">
+
+        <div class="paper-top reveal-on-scroll">
+          <p class="fecha">Una despedida sincera</p>
+          <h2>Lo que nunca supe decirte</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="paper-body">
+          <p class="saludo reveal-on-scroll typewriter-block">Mi Anto…</p>
+
+          <figure class="floating-photo right animated-photo reveal-on-scroll">
+            <img src="images/foto1.jpeg" alt="Foto 1">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Escribo esta carta porque creo que ya entendí que, aunque mi corazón quiera seguir intentando algo contigo,
+            no puedo quedarme esperando donde quizás nunca iba a pasar nada.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Desde que entré a la banda y te vi, algo en mí se quedó contigo. Ni siquiera te conocía bien,
+            pero había algo en tus ojos y en tu manera de ser que me llamó muchísimo la atención.
+          </p>
+
+          <figure class="floating-photo left animated-photo reveal-on-scroll">
+            <img src="images/foto2.jpeg" alt="Foto 2">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Me ahuevé bastante en escribirte porque me decían que tenías novio, y no quería meterme donde no debía.
+            Después de unos meses me animé a hablarte otra vez y te pregunté directamente si estabas sola,
+            si no había nadie más… y me dijiste que sí.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Ahí fue cuando me ilusioné de verdad y te dije que intentáramos algo. Cuando me respondiste “bueno”,
+            sentí bonito, porque pensé que tal vez sí podía pasar algo entre nosotros.
+          </p>
+
+          <figure class="floating-photo center animated-photo reveal-on-scroll">
+            <img src="images/foto3.jpeg" alt="Foto 3">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Aunque nunca tuvimos una salida, yo sí me emocionaba contigo. Me gustaba verte, esos abrazos cuando me pedías
+            que te amarcaba, hablar contigo y tus ojitos que siempre me sacaban una sonrisa.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Después de la caravana del Bolívar vi esa destacada del 7 de febrero y ahí entendí muchas cosas.
+            Tal vez yo me ilusioné más de la cuenta, pero sí me dolió, porque mientras yo estaba intentando algo contigo,
+            sentí que ya había alguien más ocupando un lugar que yo quería ganarme contigo.
+          </p>
+
+          <figure class="floating-photo right small animated-photo reveal-on-scroll">
+            <img src="images/foto4.jpeg" alt="Foto 4">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Y aun así… lo quise intentar otra vez. Pero poco a poco entendí que quizás tú nunca quisiste algo serio conmigo,
+            o tal vez simplemente yo no soy el hombre que estás buscando.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Aunque a veces te demorabas en contestar, o incluso había momentos donde ni me respondías,
+            yo seguía ahí porque de verdad me importabas. Y aunque no se dio nada entre nosotros,
+            sé el cariño sincero que llegué a sentir por ti.
+          </p>
+
+          <figure class="floating-photo left small animated-photo reveal-on-scroll">
+            <img src="images/foto5.jpeg" alt="Foto 5">
+          </figure>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Solo quería que supieras que nadie te va a amar de la manera en que yo lo hice.
+            Nadie te va a mirar con los ojos con los que yo te veía, ni te va a respetar de la forma
+            en que yo pensaba hacerlo contigo.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Porque si algún día se hubiera dado algo entre nosotros, yo de verdad habría dado todo por hacerte feliz.
+            Y me duele, porque eres una chica súper hermosa, de esas que uno quisiera cuidar bonito y querer en serio.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Nunca me voy a arrepentir de haberte dado esas flores eternas ni de haberte querido de verdad,
+            porque aunque no fuimos nada, tú sí significaste algo para mí.
+          </p>
+
+          <p class="reveal-on-scroll typewriter-block">
+            Y aunque te siga viendo en el colegio o en los repasos de la banda cuando haya,
+            supongo que me tocará saludarte como un amigo más… aunque por dentro me siga doliendo un poco.
+          </p>
+
+          <div class="secret-box reveal-on-scroll">
+            <p class="secret-title">Y por último...</p>
+            <p class="secret-line">
+              Entendí que no puedo obligar a alguien a quererme como yo la quiero.
+            </p>
+          </div>
+
+          <p class="final-line reveal-on-scroll">
+            Así que supongo que esta es mi manera de despedirme de ti.
+          </p>
+
+          <p class="firma glow-sign reveal-on-scroll">
+            Cuídate mucho, Anto
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
