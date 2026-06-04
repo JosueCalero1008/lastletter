@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti, mi morenita preciosa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="overlaySi" class="overlay-si oculto"></div>
+
+  <audio id="musicaCarta" src="audio/instrumental.mp3" loop></audio>
+  <audio id="musicaFinal" src="audio/como-tu.mp3" loop></audio>
+  <audio id="sonidoFeliz" src="audio/feliz.mp3"></audio>
+  <audio id="sonidoTriste" src="audio/triste.mp3"></audio>
+
+  <main class="contenedor">
+
+    <section class="pantalla activa" id="inicio">
+      <h1>Y pensar que todo empezó por la banda...</h1>
+      <p>Hay algo que quiero que abras con calma.</p>
+
+      <div class="sobre" onclick="iniciarExperiencia()">
+        <div class="carta-preview">
+          <span>Para mi morenita preciosa</span>
+        </div>
+        <div class="tapa"></div>
+        <div class="frente"></div>
+        <div class="sello"></div>
+      </div>
+
+      <button onclick="iniciarExperiencia()">Abrir cartita</button>
+    </section>
+
+    <section class="pantalla" id="carta">
+      <h2>Para ti, amor</h2>
+
+      <div class="marco-carta">
+        <div class="girasol girasol-izq"></div>
+        <div class="girasol girasol-der"></div>
+
+        <div class="papel-carta">
+          <div class="texto-carta">
+            <p id="textoCarta"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="continuarFinal" class="continuar-final oculto">
+        <button onclick="irAlFinal()">Ir al final</button>
+      </div>
+    </section>
+
+    <section class="pantalla final" id="final">
+      <h2>Ahora sí, dime...</h2>
+      <p class="pregunta-final">¿Te gustaría seguir escribiendo esta historia conmigo?</p>
+
+      <div class="botones-respuesta">
+        <button class="btn-si" onclick="respuestaSi()">Sí</button>
+        <button class="btn-no" onclick="respuestaNo()">No</button>
+      </div>
+
+      <div id="mensajeSi" class="mensaje-final mensaje-si oculto">
+        <img src="img/final.jpg" alt="Imagen especial" class="foto-final foto-zoom">
+
+        <h3>Entonces prometo intentarlo bonito contigo</h3>
+
+        <p id="textoSi" class="texto-final"></p>
+
+        <p class="frase-fuerte">
+          Y si algún día dudas de lo que siento, vuelve aquí… porque esto lo hice pensando solamente en ti. ❤️
+        </p>
+
+        <p class="firma">
+          Con todo lo que siento por ti 🤍
+        </p>
+      </div>
+
+      <div id="mensajeNo" class="mensaje-final oculto">
+        <img src="img/no.jpg" alt="Imagen de no" class="foto-final">
+
+        <h3>¿Segura que no? 🥺</h3>
+
+        <p id="textoNo" class="texto-final"></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
